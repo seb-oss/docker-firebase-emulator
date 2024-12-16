@@ -2,6 +2,7 @@ FROM node:18-bookworm
 WORKDIR /app
 
 RUN apt update
+RUN apt -y upgrade
 RUN apt -y install openjdk-17-jdk
 RUN npm install -g firebase-tools
 
