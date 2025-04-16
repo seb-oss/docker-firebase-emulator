@@ -1,4 +1,4 @@
-FROM node:18-bookworm
+FROM node:21-bookworm
 WORKDIR /app
 
 RUN apt update
