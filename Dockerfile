@@ -3,7 +3,7 @@ WORKDIR /app
 
 RUN apt update
 RUN apt -y upgrade
-RUN apt -y install openjdk-17-jdk
+RUN apt -y install default-jdk
 RUN npm install -g firebase-tools
 
 RUN firebase setup:emulators:pubsub
